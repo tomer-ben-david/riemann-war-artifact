@@ -6,7 +6,7 @@ In anyway if you are in this situation, here is a small project which would pack
 
 To have it working locally
 
-1. Clone the project.
+1. git clone https://github.com/tomer-ben-david/riemann-war-artifact.git
 2. sbt
 3. container:start 
 
