@@ -1,0 +1,12 @@
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" version="2.4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http:/java.sun.com/dtd/web-app_2_3.dtd">
+    <servlet>
+        <servlet-name>RiemannWarServlet</servlet-name>
+        <servlet-class>org.monitoring.riemann.war.RiemannWarServlet</servlet-class>
+        <init-param><param-name>container.script.static</param-name>
+            <param-value>/WEB-INF/container.script</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+</web-app>
