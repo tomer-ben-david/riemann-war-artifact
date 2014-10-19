@@ -4,6 +4,12 @@ So you would like to use [riemann](http://riemann.io) but your company uses tomc
 
 In anyway if you are in this situation, here is a small project which would package riemann in a `.war` and thus you can simply start it in process with any tomcat/jetty other web server deployment you are having.
 
+To have it working locally
+
+1. Clone the project.
+2. vi /etc/riemann.conf pour in the following content [riemann.conf](https://gist.github.com/joek/392fab94053291413024)
+3. container:start 
+
 Basically this project is a simple server where in its init its starting up an embedded riemann.
 
 So we have a simple `web.xml` which references this servlet and starts it upon its deployment:
@@ -32,11 +38,8 @@ public static void startEmbeddedRiemannServer() {
     System.out.println("Embedded riemann server started up...");
 }    
 ```
-To have it working locally
 
-1. Clone the project.
-2. vi /etc/riemann.conf pour in the following content [riemann.conf](https://gist.github.com/joek/392fab94053291413024)
-3. container:start 
+See example startup:
 
 <pre>
 <b>~/dev/projects/riemann-war-artifact$ sbt</b>
