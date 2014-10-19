@@ -32,8 +32,11 @@ public static void startEmbeddedRiemannServer() {
     System.out.println("Embedded riemann server started up...");
 }    
 ```
+To have it working locally
 
-check out the project then use sbt to start up the container
+1. Clone the project.
+2. vi /etc/riemann.conf pour in the following content [riemann.conf](https://gist.github.com/joek/392fab94053291413024)
+3. container:start 
 
 <pre>
 <b>~/dev/projects/riemann-war-artifact$ sbt</b>
