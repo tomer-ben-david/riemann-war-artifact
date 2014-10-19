@@ -7,7 +7,7 @@ In anyway if you are in this situation, here is a small project which would pack
 To have it working locally
 
 1. Clone the project.
-2. sudo wget https://gist.github.com/joek/392fab94053291413024 /etc/riemann.conf
+2. sudo wget -O /etc/riemann.conf https://gist.github.com/joek/392fab94053291413024
 3. sbt
 4. container:start 
 
