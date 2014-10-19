@@ -35,7 +35,6 @@ public static void startEmbeddedRiemannServer() {
 
 check out the project then use sbt to start up the container
 
-```bash
 <pre>
 <b>~/dev/projects/riemann-war-artifact$ sbt</b>
 [info] Loading project definition from ~/dev/projects/riemann-war-artifact/project
@@ -61,6 +60,5 @@ Embedded riemann server started up...
 2014-10-19 15:02:13.305:INFO:oejs.ServerConnector:main: Started ServerConnector@2f51e2fe{HTTP/1.1}{0.0.0.0:8080}
 2014-10-19 15:02:13.305:INFO:oejs.Server:main: Started @8605ms
 </pre>
-```
 
 vwalla, riemann is up in your jetty/tomcat conatiner as a deployable war.
