@@ -1,6 +1,6 @@
 riemann-war-artifact
 ====================
-So you would like to use [riemann](http://riemann.io) but your company uses tomcat/jetty .war deployments and would like to stay with same flavor.  There might be some good reasons for that (or not..).  For instance if your admins are used to monitor tomcat, and are already in the hang of it, it could be easier to persuade them to install a new .war rather than a whole new server.
+So you would like to use [riemann](http://riemann.io) but your company uses tomcat/jetty .war deployments and would like to stay with same flavor.  There might be some good reasons for that (or not..).  For instance if your admins are used to monitor tomcat, and are already in the hang of it (have tweaked its memory, customized puppet module, permgen, whatever), it could be easier to persuade them to install a new .war rather than a whole new server.
 
 In anyway if you are in this situation, here is a small project which would package riemann in a `.war` and thus you can simply start it in process with any tomcat/jetty other web server deployment you are having.
 
