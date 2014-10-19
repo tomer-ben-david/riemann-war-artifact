@@ -26,7 +26,7 @@ see example:
 2014-10-19 15:02:09.003:WARN:oeja.AnnotationConfiguration:main: ServletContainerInitializers: detected. Class hierarchy: empty
 <b>Starting up embedded riemann server conf: src/main/resources/riemann.conf
 loading bin
-INFO [2014-10-19 15:02:13,112] main - riemann.bin - PID 6903 (same pid as tomcat embedded in it)
+INFO [2014-10-19 15:02:13,112] main - riemann.bin - PID 6903 (same pid as jetty embedded in it)
 INFO [2014-10-19 15:02:13,286] clojure-agent-send-off-pool-4 - riemann.transport.websockets - Websockets server 127.0.0.1 5556 online
 INFO [2014-10-19 15:02:13,286] clojure-agent-send-off-pool-1 - riemann.transport.tcp - TCP server 127.0.0.1 5555 online
 INFO [2014-10-19 15:02:13,293] clojure-agent-send-off-pool-5 - riemann.transport.udp - UDP server 127.0.0.1 5555 16384 online
