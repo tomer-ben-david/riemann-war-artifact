@@ -1,5 +1,38 @@
 riemann-war-artifact
 ====================
+So you would like to use [riemann][http://riemann.io] but your company uses tomcat/jetty .war deployments and would like to stay with same flavor.  There might be some good reasons for that (or not..).  For instance if your admins are used to monitor tomcat, and are already in the hang of it, it could be easier to persuade them to install a new .war rather than a whole new server.
+
+In anyway if you are in this situation, here is a small project which would package riemann in a `.war` and thus you can simply start it in process with any tomcat/jetty other web server deployment you are having.
+
+Basically this project is a simple server where in its init its starting up an embedded riemann.
+
+So we have a simple `web.xml` which references this servlet and starts it upon its deployment:
+
+```xml
+<servlet>
+    <servlet-name>RiemannWarServlet</servlet-name>
+    <servlet-class>org.monitoring.riemann.war.RiemannWarServlet</servlet-class>
+    <init-param><param-name>riemann.conf.filepath</param-name>
+        <param-value>/etc/riemann.conf</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+</servlet>
+```
+
+Then our `RiemannWarServlet` would just start up the embedded riemann.
+
+```java
+public void init(ServletConfig c) throws ServletException {
+    RunMeEmbeedRiemannServer.startEmbeddedRiemannServer();
+}
+
+public static void startEmbeddedRiemannServer() {
+    System.out.println("Starting up embedded riemann server...");
+    riemann.bin.main(new String[]{"riemann.config"});
+    System.out.println("Embedded riemann server started up...");
+}    
+```
+
 check out the project then use sbt to start up the container
 
 ```bash
