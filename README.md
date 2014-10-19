@@ -7,7 +7,7 @@ In anyway if you are in this situation, here is a small project which would pack
 To have it working locally
 
 1. Clone the project.
-2. vi /etc/riemann.conf pour in the following content [riemann.conf](https://gist.github.com/joek/392fab94053291413024)
+2. sudo wget https://gist.github.com/joek/392fab94053291413024 /etc/riemann.conf
 3. container:start 
 
 Basically this project is a simple server where in its init its starting up an embedded riemann.
