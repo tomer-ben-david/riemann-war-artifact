@@ -17,7 +17,7 @@ see example:
 <b>~/dev/projects/riemann-war-artifact$ sbt</b>
 [info] Loading project definition from ~/dev/projects/riemann-war-artifact/project
 [info] Set current project to riemann-org.monitoring.riemann.war-artifact (in build file:~/dev/projects/riemann-war-artifact/)
-> container:start
+<b>> container:start</b>
 [info] starting server ...
 [success] Total time: 1 s, completed Oct 19, 2014 3:02:04 PM
 > 2014-10-19 15:02:04.780:INFO::main: Logging initialized @60ms
