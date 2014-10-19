@@ -9,7 +9,7 @@ import java.io.IOException;
  */
 public class RiemannWarServlet extends GenericServlet {
     public void init(ServletConfig c) throws ServletException {
-        RunMeEmbeedRiemannServer.startEmbeddedRiemannServer();
+        RunMeEmbeedRiemannServer.startEmbeddedRiemannServer(c.getInitParameter("riemann.conf.filepath"));
     }
 
     @Override public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
