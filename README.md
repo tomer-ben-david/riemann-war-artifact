@@ -7,9 +7,8 @@ In anyway if you are in this situation, here is a small project which would pack
 To have it working locally
 
 1. Clone the project.
-2. `sudo wget -O /etc/riemann.conf https://gist.githubusercontent.com/joek/392fab94053291413024/raw/ed7bcb7c1c35bb9ca27b3882e9cd4b39b19a08df/riemann.conf`
-3. sbt
-4. container:start 
+2. sbt
+3. container:start 
 
 Basically this project is a simple server where in its init its starting up an embedded riemann.
 
@@ -20,7 +19,7 @@ So we have a simple `web.xml` which references this servlet and starts it upon i
     <servlet-name>RiemannWarServlet</servlet-name>
     <servlet-class>org.monitoring.riemann.war.RiemannWarServlet</servlet-class>
     <init-param><param-name>riemann.conf.filepath</param-name>
-        <param-value>/etc/riemann.conf</param-value>
+        <param-value>src/main/resources/riemann.conf</param-value>
     </init-param>
     <load-on-startup>1</load-on-startup>
 </servlet>

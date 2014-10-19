@@ -5,7 +5,7 @@
         <servlet-name>RiemannWarServlet</servlet-name>
         <servlet-class>org.monitoring.riemann.war.RiemannWarServlet</servlet-class>
         <init-param><param-name>riemann.conf.filepath</param-name>
-            <param-value>/etc/riemann.conf</param-value>
+            <param-value>src/main/resources/riemann.conf</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
