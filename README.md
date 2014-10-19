@@ -45,10 +45,11 @@ And to generate the package:
 
 <pre>
 $ sbt
-[info] Loading project definition from /home/tomerb/tmp/riemann-war-artifact/project
+[info] Loading project definition from ~/riemann-war-artifact/project
 [info] Set current project to riemann-org.monitoring.riemann.war-artifact (in build file:~/riemann-war-artifact/)
 > package
-[info] Packaging ~/riemann-war-artifact/target/scala-2.10/<b>riemann-org-monitoring-riemann-war-artifact_2.10-1.0.war</b> ...
+[info] Packaging 
+~/riemann-war-artifact/target/scala-2.10/<b>riemann-org-monitoring-riemann-war-artifact_2.10-1.0.war</b> ...
 [info] Done packaging.
 </pre>
 [success] Total time: 2 s, completed Oct 19, 2014 3:56:55 PM
