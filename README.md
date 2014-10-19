@@ -2,7 +2,7 @@ riemann-war-artifact
 ====================
 check out the project then use sbt to start up the container
 
-
+```bash
 ~/dev/projects/riemann-war-artifact$ sbt
 [info] Loading project definition from ~/dev/projects/riemann-war-artifact/project
 [info] Set current project to riemann-org.monitoring.riemann.war-artifact (in build file:~/dev/projects/riemann-war-artifact/)
@@ -25,6 +25,6 @@ Embedded riemann server started up...
 2014-10-19 15:02:13.296:WARN:oejsh.RequestLogHandler:main: !RequestLog
 2014-10-19 15:02:13.305:INFO:oejs.ServerConnector:main: Started ServerConnector@2f51e2fe{HTTP/1.1}{0.0.0.0:8080}
 2014-10-19 15:02:13.305:INFO:oejs.Server:main: Started @8605ms
-
+```
 
 vwalla, riemann is up in your jetty/tomcat conatiner as a deployable war.
